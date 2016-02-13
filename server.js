@@ -8,7 +8,7 @@ var server = http.createServer(function(request, response) {
     console.log((new Date()) + ' Received request for ' + request.url);
 	response.writeHead(200, {'Content-Type': 'text/plain'});
 	  response.write("Hi \n\n");
-	  response.end("The server is active \n");
+	  response.end("The server is active. \n");
 });
 
 server.listen( port, ipaddress, function() {
